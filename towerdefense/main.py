@@ -12,21 +12,21 @@ pygame.init()
 pygame.mixer.init()
 
 #사운드 로드
-sound = pygame.mixer.Sound("towerdefense/Blippy Trance.mp3")
+sound = pygame.mixer.Sound("Blippy Trance.mp3")
 
 # 화면 크기 설정
 screen_width = 1210#게임 화면 (0<x<800) , ui (800<x<1200)
 screen_height = 800
 screen = pygame.display.set_mode((screen_width, screen_height))
 pygame.display.set_caption('tower_defense')
-background = pygame.image.load('towerdefense/td_image/background.png')
-ganghwa = pygame.image.load('towerdefense/td_image/ganghwa.png')
-buildtower = pygame.image.load('towerdefense/td_image/tower.png')
-setting = pygame.image.load('towerdefense/td_image/setting.png')
-start_background = pygame.image.load('towerdefense/td_image/start.png')
-manual_button = pygame.image.load('towerdefense/td_image/manual_click.png')
-game_manual = pygame.image.load('towerdefense/td_image/manual.png')
-game_manual_out = pygame.image.load('towerdefense/td_image/manual_x.png')
+background = pygame.image.load('td_image/background.png')
+ganghwa = pygame.image.load('td_image/ganghwa.png')
+buildtower = pygame.image.load('td_image/tower.png')
+setting = pygame.image.load('td_image/setting.png')
+start_background = pygame.image.load('td_image/start.png')
+manual_button = pygame.image.load('td_image/manual_click.png')
+game_manual = pygame.image.load('td_image/manual.png')
+game_manual_out = pygame.image.load('td_image/manual_x.png')
 
 class NoMoney(Exception):
     def __init__(self):
